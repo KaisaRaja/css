@@ -1,0 +1,46 @@
+* {font-style: Italic;
+}
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+p {
+    color: deeppink;
+}
+
+ul {
+    background-color: rgb(236, 236, 136);
+    border: dashed cornflowerblue 5px;
+}
+
+.loik {
+    color: chocolate;
+}
+
+div.loik {
+    font-size: 10px;
+}
+div.loik p {
+    color: rgb(212, 32, 218);
+    font-size: 15px;
+}
+
+#teine {
+    color: lime;
+}
+
+span {
+    font-weight: bold;
+}
+
+.rasvane {
+    font-weight: bold;
+    font-size: 25px;
+}
+
+#teine span.rasvane {
+    font-size :200%;
+    color: red;
+}
+
+h1 {font-size: 60px;}  /* 4 pc = 4 korda 12 pointi ehk 16 px.  */

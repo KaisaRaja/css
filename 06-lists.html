@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="et">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lists</title>
+    <style>
+        body {
+            background-color: rgb(167, 152, 152);
+        }
+
+        ul#nobullets {
+            background-color: chocolate;
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        ul#ruudud {
+            background-color: aqua;
+            list-style-type: square;
+
+        }
+
+        ul#menu {
+            background-color: darksalmon;
+        }
+
+        ul#menu li {
+            display: inline-block;
+            padding: 10px;
+            background-color: pink;
+        }
+
+        ol#roomanumbrid {
+            list-style-type: upper-roman;
+            background-color: beige;
+        }
+
+        /* ol#roomanumbrid li::marker {
+            content: counter(list-item, upperroman)
+        } */
+        ol#tahed {
+            list-style-type: upperalpha;
+            background-color: bisque;
+        }
+
+        a {
+            background-color: rgb(0, 139, 104);
+            padding: 10px;
+        }
+
+        a.minuBlock {
+            display: block;
+            /* display: none;  siis ei näita üldse, st peida, ja kohta ei võta ära, 
+            hiddeniga ei näita aga võtab nn koha ära*/
+            visibility: hidden;
+            /* peida, aga jäta koht, mittenäidata mingit teksti inimesele 
+            aga nt otsingumootoriks oleks hea */
+        }
+
+        .minuKastike {
+            background-color: crimson;
+            width: 400px;
+            height: 200px;
+            /* overflow: scroll; kerimisriba koguaeg ka paremal all, pole hea, sama kui OVERFLOW - X  */
+            /* overflow: auto; /kerimisriba kõrval, sama kui OVERFLOW - y */
+            overflow-y: scroll; /* vertikaalne kerimine koguaeg nähtaval */ 
+            float: left;
+            margin-top: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Lists ehk loendid</h1>
+
+    <ul id="nobullets">
+        <li>Tekst</li>
+        <li>Tekst</li>
+        <li>Tekst</li>
+    </ul>
+
+    <ul id="ruudud">
+        <li>Tekst</li>
+        <li>Tekst</li>
+        <li>Tekst</li>
+    </ul>
+
+    <ul id="menu">
+        <li>Menüü 1</li>
+        <li>Menüü 2</li>
+        <li>Menüü 3</li>
+    </ul>
+
+    <ol id="roomanumbrid">
+        <li>Menüü 1</li>
+        <li>Menüü 2</li>
+        <li>Menüü 3</li>
+    </ol>
+    <ol id="tahed">
+        <li>Menüü 1</li>
+        <li>Menüü 2</li>
+        <li>Menüü 3</li>
+    </ol>
+
+    <hr>
+    <!--//DISPLAY -->
+    <h1>Display</h1>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+        <a class="minuBlock" href="https://google.com">Earum quasi</a> culpa dignissimos 
+        soluta error excepturi id
+        commodi esse,ducimus itaque quae <a href="https://rajakaubad.ee">perferendis</a> 
+        nostrum consectetur ipsa, facere quaerat nisi magnam.
+    </p>
+    <hr>
+    <!--overflow -->
+    <h1>Overflow</h1>
+    <p class="minuKastike">Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+        Voluptatem perferendis doloribus
+        tempore repellat in! Incidunt ex, est odio animi facere eos? Ea maxime velit porro,
+        consequuntur officia ducimus magnam! Aliquam. Lorem ipsum dolor sit amet consectetur
+        adipisicing elit. Molestias ratione eaque quia et, quaerat, ipsa repellat quis qui odio
+        voluptates inventore sapiente exercitationem,
+        architecto magnam? Soluta maiores labore magnam deleniti!
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatem perferendis doloribus
+        tempore repellat in! Incidunt ex, est odio animi facere eos? Ea maxime velit porro,
+        consequuntur officia ducimus magnam! Aliquam. Lorem ipsum dolor sit amet consectetur
+        adipisicing elit. Molestias ratione eaque quia et, quaerat, ipsa repellat quis qui odio
+        voluptates inventore sapiente exercitationem,
+        architecto magnam? Soluta maiores labore magnam deleniti</p>
+
+        <div style="background-color: aqua;">
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+        </div>
+
+
+</body>
+
+</html>

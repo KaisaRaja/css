@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="et">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box model</title>
+    <style>
+        body,
+        p {
+            padding: 0;
+            margin: 0;
+
+        }
+        div.container {
+            background-color: chartreuse;
+            width: 450px;
+            padding: 20px;
+            margin: 0 auto; /* parenti elemendi suhtes keskel */ 
+            border-width: 10px;
+            border-color: rgb(255, 208, 0);
+            border-style: dotted;
+        }
+        div.kast{
+            background-color: rgb(247, 228, 64);
+            width: 320px;
+            height: 250px;
+            padding: 20px 30px 20px 30px;  /* õhk sisu ja kasti vahel */
+            /* küljed: vasak, parem, ülemine, vastasküljed; top, right ja bottom ja kõik küljed ühtemoodi 
+            / shorthand versioonid, kus pole kirjas top jne
+            padding-left: 30px;
+            padding-right: 50px;
+            padding-top: 5px; 
+            padding: 20px 30px;
+             padding: 20px 30px 50px;
+             padding: 20px;  */
+            border: 5px dashed rgb(245, 130, 23);
+            margin: 0px;     /* samamoodi nagu padding */ 
+            box-sizing: border-box;
+            margin: 40px;
+            margin: 0 auto;
+            margin-left: inherit; /* võta emaelemendilt */ 
+        }
+
+        h1 {
+            margin: 0.5em;
+            font-size: 1.5em;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Box model</h1>
+<div class="container">
+    <div class="kast">
+        <p> Lorem ipsum dolor sit amet <span">consectetur</span> adipisicing elit.
+                Incidunt et illo ad sint voluptatibus, <span>minima dolores </span> cupiditate mollitia
+                facilis architecto ea nihil ut consectetur <span>veniam ero</span> doloremque fuga iusto? Voluptas!</p>
+    </div>    
+    </div>    
+
+
+</body>
+
+</html>

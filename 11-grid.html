@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="et">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        .item1 {
+            grid-area: header;
+        }
+
+        .item2 {
+            grid-area: menu;
+        }
+
+        .item3 {
+            grid-area: main;
+        }
+
+        .item4 {
+            grid-area: side;
+        }
+
+        .item5 {
+            grid-area: footer;
+        }
+
+        .grid-container {
+            display: grid;
+            grid-template-areas: 'header header header header header header'
+                                 'menu main main main main side'
+                                 'footer footer footer footer footer side';
+            grid-gap: 5px;
+            background-color: pink;
+            padding: 16px;
+        }
+        .grid-container>div {
+            background-color: coral;
+            text-align: center;
+            padding: 20px;
+            font-size: 1.3em;
+        }
+        /* kui ekraan on väike, siis jääb kaks veergu */ 
+        @media screen and (max-width:700px) {
+            .grid-container {
+                grid-template-areas:    'menu header'
+                                        'menu main'
+                                        'menu side'
+                                        'footer footer';
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <h1>GridSystem ehk koordinaatide kasutamine</h1>
+    <p>Teeme lehe, millel 3 rida ja 6 veergu</p>
+
+    <div class="grid-container">
+        <div class="item1">Leheküje päis</div>
+        <div class="item2">Menüü</div>
+        <div class="item3">Põhitekst</div>
+        <div class="item4">Külgelement</div>
+        <div class="item5">Jalus</div>
+    </div>
+
+</body>
+
+</html>

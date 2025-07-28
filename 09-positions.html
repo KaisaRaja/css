@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="et">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Positions</title>
+    <style>
+        * {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            box-sizing: border-box;
+        }
+
+        div {
+            border: 3px solid crimson;
+            width: 200px;
+            padding: 20px;
+        }
+
+        .static {
+            position: static;
+        }
+
+        .relative {
+            position: relative;
+            left: 30px;
+        }
+
+        .absolute {
+            position: absolute;
+            left: 100px;
+        }
+
+        .fixed {
+            position: fixed;
+            bottom: 50xpx;
+            right: 50px;
+        }
+
+        .sticky {
+            position: sticky;
+            top: 0;
+            left: 200px;
+            background-color: aqua;
+        }
+
+        .static p::selection {
+            color: green;
+            background-color: goldenrod;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Positions</h1>
+    <div class="sticky">
+        <h2>Position: sticky</h2>
+        <p>Väga kleepuv element</p>
+    </div>
+    <div class="static">
+        <h2>Position: static</h2>
+        <p>Tavaline normaalne teksti kulgemine ehk normal flow</p>
+    </div>
+    <div class="relative">
+        <h2>Position: relative</h2>
+        <p>Relatiivne ehk suhteline paigutus normaalse teksti kulgemise suhtes</p>
+        <div class="absolute">
+            <h2>Position: absolute</h2>
+            <p>Absoluutne paigutus on alati relatiivse elemendi suhtes</p>
+        </div>
+    </div>
+    <div class="fixed">
+        <h2>Position: fixed</h2>
+        <p>Fikseeritud paigustus on vaataja vaate suhtes,
+            misjääb paika ka lehe kerimisel.</p>
+    </div>
+
+</body>
+
+</html>

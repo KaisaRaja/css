@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="et">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex</title>
+    <style>
+        .flex-container {
+            display: flex;  /* vaikimisi pannakse elemendid üksteise kõrvale */ 
+            background-color: rgb(241, 138, 3);
+            height: 200px;
+            justify-content: center;  /* horisonaalselt keskele */ 
+            align-items: center; /* vertikaalselt keskele */
+            flex-direction: column; /* üksteise alla */ 
+            flex-direction: row-reverse;
+        }
+        .flex-container>div {  /* konteineri sisuelemendid */ 
+            background-color: pink;
+            width: 100px;
+            height: 100px;
+            margin: 10px;
+            border-radius: 13px;
+             /* line-height: 100px;  kui reavahe on sama, mis elemendi kõrgus, siis sisu pannakse 
+            vertikaalselt keskele */ 
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            flex-wrap: wrap;
+            flex-wrap: wrap-reverse;
+            flex-wrap: nowrap;
+
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Flex</h1>
+    <div class="flex-container">
+        <div>Esimene element</div>
+        <div>Teine element</div>
+        <div>Kolmas element</div>
+        <div>Neljas element</div>
+        <div>Viies element</div>
+
+    </div>
+
+</body>
+
+</html>

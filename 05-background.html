@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="et">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Background</title>
+    <style>
+        body {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            background-color: #0c0c0c;
+            color: #d4c6c6;
+            /* background-image: url("../HTML/images/meri.jpg"); */
+            background-repeat: no-repeat;
+            /* x, y, no-reapeat */
+            background-position: top;
+            /* top, bottom, left, right, center */
+            background-attachment: fixed;
+            /* lehe suhtes asukoha fikseerimine */
+        }
+
+        h1 {
+            text-align: center;
+            /* teksti joondamine */
+            letter-spacing: 3px;
+            /* võib olla ka negatiivne , teeb tähevahe suuremaks või pisemaks */
+            word-spacing: 15px;
+            /* ruumi sõnade vahele, negatiivset nr kasutades saab kokku ajada sõnu/tekste */
+            text-shadow: 4px 2px rgb(240, 174, 113);
+            /* negavtiivse nriga saame liigutada teisele poole, 
+                        kuidagi saab varju ka teha, taustavärviga*/
+            font-size: 5vw;
+        }
+
+        a {
+            color: goldenrod;
+            font-weight: bold;
+            /* text-decoration: none;  võtab ära hüperlingilt alt joone */
+        }
+
+        a:link {
+            color: goldenrod;
+        }
+
+        a:visited {
+            color: green;
+        }
+
+        a:hover {
+            color: hotpink;
+        }
+
+        a:active {
+            color: lime;
+        }
+
+        /* LoVe HAte , ehk siis on siin tähtis see järjestus */
+
+
+        div {
+            width: 600px;
+            height: 400px;
+            background-size: cover;
+            padding-top: 10px;
+            padding-left: 20px;
+            border-radius: 10px;
+            /* nurgad pehmemaks */
+            position: relative;
+            /* paiknemine suhteline */
+        }
+
+        div p {
+            background-color: rgba(0, 0, 0, 0.6);
+            font-size: 1rem;
+            width: 80%;
+            padding: 5px;
+            border-radius: 5px;
+            text-align: justify;
+            line-height: 1.5;
+            /* reavahe , võib olla ka neg */
+        }
+
+        #meri {
+            background-image: url("../HTML/images/meri.jpg");
+            background-repeat: no-repeat;
+            z-index: 20;
+
+        }
+
+        #meri2 {
+            background-image: url("../HTML/images/meri.jpg");
+            background-repeat: no-repeat;
+            z-index: 10;
+            /* tõstame nn hunnikus kõrgemale */
+
+        }
+
+        #piibeleht {
+            background-image: url(../HTML/piibelehed.jpg);
+            background-repeat: no-repeat;
+            z-index: 10;
+            /* -1 läheb see tahapoole */
+            margin-top: -50px;
+            margin-left: 30px;
+            border: #333 solid 5px;
+            border-style: hidden;
+            text-transform: uppercase;
+            /*  text-transform: lowercase;
+            text-transform: capitalize; 
+            font-variant: small-caps*/
+            text-indent: 50px;
+            /* taandrida */
+
+
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Background / Taust</h1>
+    <div id="meri">
+        <p> Ilus päikeseloojang Eestis. <br>
+            Rand on minu lemmikkoht suvisel soojal ajal! Seal saab mõnusal suvisel päeval käia nautimas rannamõnusid,
+            õhtuti vaadata ilusaid päikeseloojanguid ja kui väga kaua rannas olla, siis saab hommikul ka imeilusat
+            päikesetõusu nautida! Rääkimata öisest augustikuisest tähtesesajust! <br>
+            No imeilus Eesti! Tahad tulla Eestisse puhkama?<br>
+            <a href="https://visitestonia.com/">Vaata lähemalt &gt;&gt;</a><br>
+            <a href="https://visittallinn.ee/">Vaata lähemalt ka siit &gt;&gt;</a>
+        </p> <!-- kui paned <a href="#">tekst</a> , siis viib sellele samale lehele, kus oles-->
+    </div>
+
+    <div id="meri2">
+        <!--  <div style="position: absolute; background-color: rgba(255,255,255, 0.5); height: 100%; width: 100%;"></div> -->
+        <p style="font-style: italic;"> Ilus päikeseloojang Eestis. <br>
+            <span style="font-style: normal">Rand on minu lemmikkoht suvisel soojal ajal! Seal saab mõnusal suvisel päeval käia nautimas rannamõnusid,
+            õhtuti vaadata ilusaid päikeseloojanguid ja kui väga kaua rannas olla, siis saab hommikul ka imeilusat
+            päikesetõusu nautida! Rääkimata öisest augustikuisest tähtesesajust! <br>
+            No imeilus Eesti! </span> </p>
+    </div>
+
+    <div id="piibeleht">
+        <p> Kevadel hakkavad metsad särama! Ja vot kui hästi lõhnama.
+            Sinna on asunud paariks nädalaks õitsema piibelehed ehk maikellukesed!
+        </p>
+    </div>
+
+</body>
+
+</html>

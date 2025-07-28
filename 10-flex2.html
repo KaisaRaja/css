@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="et">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex2</title>
+    <style>
+        div {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            border: 3px dotted black;
+            border-radius: 13px;
+        }
+
+        .flex-container {
+            background-color: rgb(241, 138, 3);
+            height: 50vh;
+            flex-direction: row;/
+        }
+
+        .flex-container>div {
+            background-color: pink;
+            width: 100px;
+            height: 100px;
+            margin: 10px;
+            /* background-image: radial-gradient(pink 30%, coral 50%, white 20%); */
+        }
+        .circle {border-radius: 50%;
+        background-color: rgb(231, 9, 120) !important;}
+
+        @media screen and (max-width:600px){
+            body {background-color: black;}
+            h1 {color:white;}
+        }
+        @media screen and (max-width:800px) and (min-width:600px){
+            body {background-color: rgb(241, 117, 117);}
+            h1 {color:white;}
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Flex mudel 2</h1>
+    <div class="flex-container">
+        <div>Esimene element</div>
+        <div class="circle">Teine element</div>
+        <div>Kolmas element</div>
+        <div class="circle">Neljas element</div>
+        <div>Viies element</div>
+
+    </div>
+
+</body>
+
+</html>

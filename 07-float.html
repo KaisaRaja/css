@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="et">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>07-float</title>
+</head>
+<style>
+    * {
+        box-sizing: border-box;
+    }
+
+    .box {
+        width: 30%;
+        float: left;
+    }
+
+    .box img {
+        width: 100%;
+    }
+    p {
+        background-color: aqua;
+      /*   clear: both; võiks ka selle panna, aga parem panna eraldi see clear */ 
+    }
+    .clearfix::after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+    #tekst img {
+        float: right;
+        opacity: 0.5;
+    }
+    #tekst img:hover {
+        opacity: 1;
+    }
+    #tekst p:hover {
+        background-color: blanchedalmond;
+    }
+</style>
+
+<body>
+    <h1>Float</h1>
+<div class="clearfix"> 
+    <div> <!-- conteiner, mille sees toimetame-->
+        <div class="box">
+            <img src="../HTML/piibelehed.jpg" alt="piibelehed">
+        </div>
+        <div class="box">
+            <img src="../HTML/images/kadriorg.jpg" alt="kadriorg">
+        </div>
+       
+        <div class="box">
+            <img src="../HTML/images/meri.jpg">
+        </div>
+    </div>
+</div>
+    <p> Viimane tekst sellel lehel</p>
+    <h2> Tekst pildiga</h2>
+
+    <div id="tekst">
+        <p> Viimane tekst sellel lehel</p>
+        <h2> Tekst pildiga</h2>
+        <div> 
+            <p> 
+                <img src="../HTML/piibelehed.jpg" alt="piibelehed" width="150">
+                Oi mu armsad piibelehed ehk maikellukesed! Kevadel metsas käies saame nautida nende kohalolu!</p>
+            <p> Siia tuleb ilus tekst uuesti </p>
+        </div>
+        </div>
+</body>
+
+</html>

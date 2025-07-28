@@ -1,0 +1,58 @@
+* {
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.element {
+    width: 50%;
+    float: left;
+
+}
+.element-table {width: 70%;
+overflow-x: auto;}
+.element-image {width: 30%;}
+
+table {
+    border: 4px solid orange;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th, td {
+    border: 1px solid black;
+    padding: 5px; /*ruumi*/ 
+}
+th {
+    height: 3em;
+    vertical-align: middle;
+    background-color: pink;
+}
+
+td {
+    border-bottom: 2px solid orangered;
+
+}
+
+tr:nth-child(odd) {
+    background-color: rgb(219, 255, 161);
+}
+tr:nth-child(even) {
+    background-color: rgb(243, 243, 142);
+}
+td:nth-child(1), td:nth-child(2), td:nth-child(3) {
+    padding-left: 1em;
+}
+td:nth-child(4), td:nth-child(5) {
+    text-align: center;
+}
+td:nth-child(6) {
+    text-align: right;
+    padding-right: 1em;
+}
+
+tr:hover {
+    background-color: coral;
+}
